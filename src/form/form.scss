@@ -1,0 +1,89 @@
+$defaultGray: #ccc;
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+label {
+  width: 100%;
+  font-family: "Open Sans", sans-serif;
+  font-size: 12px;
+  line-height: 20px;
+  text-align: left;
+  color: rgba(0, 0, 0, 0.54);
+}
+
+button {
+  padding: 10px 15px;
+  color: #fff;
+  background-color: rgb(141, 198, 65);
+  cursor: pointer;
+  border-radius: 4%;
+  border: 1px solid rgb(141, 198, 65);
+  margin-top: 20px;
+
+  &:hover {
+    color: rgb(141, 198, 65);
+    background-color: #fff;
+    transition: all 0.5s ease;
+  }
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 300px;
+  height: 150px;
+  margin-top: 30vh;
+  border: 1px solid $defaultGray;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 2px 4px 0px,
+    rgba(0, 0, 0, 0.12) 0px 0px 4px 0px;
+  border-radius: 3%;
+  padding: 20px 5px 20px 33px;
+}
+
+.card-num-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.card-num {
+  width: 83%;
+  padding: 8px;
+  border-radius: 3%;
+  border: 1px solid $defaultGray;
+}
+
+.lower-input-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.lower-input {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+
+  input {
+    width: 70%;
+  }
+}
